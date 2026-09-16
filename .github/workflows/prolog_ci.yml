@@ -1,0 +1,25 @@
+name: Prolog CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install SWI-Prolog
+      run: |
+        sudo apt-add-repository ppa:swi-prolog/stable
+        sudo apt-get update
+        sudo apt-get install -y swi-prolog
+
+    - name: Run Automated Tests
+      run: |
+        swipl -g "load_test_files([]), run_tests." -t halt tests.pl
