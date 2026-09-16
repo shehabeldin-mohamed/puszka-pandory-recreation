@@ -1,4 +1,4 @@
-# Puszka Pandory: Prolog System Recreation
+# Puszka Pandory: Prolog Game Recreation
 
 A reverse-engineered recreation of a classic Polish text adventure, implemented in SWI-Prolog. 
 
