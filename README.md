@@ -1,4 +1,4 @@
-# Puszka Pandory: Prolog System Recreation
+# Puszka Pandory: Prolog Game Recreation
 
 A reverse-engineered recreation of a classic Polish text adventure, implemented in SWI-Prolog. 
 
@@ -21,6 +21,9 @@ A reverse-engineered recreation of a classic Polish text adventure, implemented 
 
 *   **Grid-Based World Generation** 
     The environment is structured as a 15x15 coordinate grid tracking 225 individual tiles.
+
+    <img src="assets/map.svg" width="700" alt="Puszka Pandory 15x15 Grid Map">
+    
 *   **Biome Mapping** 
     The world features six distinct biomes (Meadow, Forest, Beach/Dunes, Rocks, Sea, and Minefield) spread across the map regions.
 *   **Navigation & Environment Parsing** 
